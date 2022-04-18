@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="icon" href="../assets/isotipo.png">
+    <link rel="stylesheet" href="./estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./estilos-romance.css">
+</head>
+<body>
+   <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Tienda de música</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Romance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quienes somos</a>
+              </li>
+            </div>
+            
+             <form class="d-flex">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <a href="#" class="btn btn-outline-light">Perfil</a>             </form>
+        </div>
+      </nav>
+
+      <!--------------------- inicio card -->
+      <div class="cards-styles">
+          <div class="card" style="width: 18rem;">
+              <img src="./romance.png" class="card-img-top" alt="amoroso">
+              <div class="card-body">
+              <h5 class="card-title">Top romance</h5>
+              <p class="card-text">Encuentra la mejor música para tener una tarde perfecta </p>
+              <div>
+                <!-- boton modal -->
+                
+                <div>
+                
+                <button type="button"  class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#miModal">Editar</button>
+                <!-- crear modal -->
+
+                <div class="modal fade " id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitle">Editar albúm</h5>
+                                <button type="button" class=" btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+            
+            
+                            <div class="modal-body">
+            
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      <div id="emailHelp" class="form-text"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Descripción</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>  
+                                  </form>
+            
+                                  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                    <button type="button" class="btn btn-primary">Descripción</button>
+                                  
+                                    <div class="btn-group" role="group">
+                                      <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Lo mejor de la vida
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <li><a class="dropdown-item" href="#">Dimash Kudaibergen</a></li>
+                                        <li><a class="dropdown-item" href="#">Dimash</a></li>
+                                      </ul>
+                                    </div>
+                                  </div><br>
+            
+                                  <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-primary">Seleccionar archivo</button>
+                                    <button type="button" class="btn btn-outline-primary">Sin archivos selleccionados</button>
+                                  </div>
+            <!--============= img========= -->
+                                <div class="text-center">
+                                    <img class="modal-content-img" src="./romance.png" class="rounded" alt="...">
+                                  </div>
+                                  <table class="table">
+              
+              <tbody>
+                <tr class="table-active">
+                  Lanzamiento
+                </tr>
+                <tr class="table-active">
+                    Precio
+                </tr>
+                <tr>
+                  <th scope="row">Fecha</th>
+                  <td colspan="2" class="table-active"><button>188.00</button></td>
+                 
+                </tr>
+              </tbody>
+            </table>
+                            </div>
+            
+            
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Agregar +</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+        
+
+
+                
+</div>
+                <a href=".." class="btn btn-primary bg-danger">Eliminar</a>
+                <a href="../index.html" class="btn btn-primary bg-success">Inicio</a>
+
+                
+              </div>
+          </div>
+      </div>
+          <!------------------ inicio table -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Artista</th>
+                <th scope="col">Canción</th>
+                <th scope="col">Duración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Sebastian Yatra</td>
+                <td>Tacos rojos</td>
+                <td>3:10</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Whitney Houston</td>
+                <td>I will always love you</td>
+                <td>4:23</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Главная сцена- супер-финал 2 раунд</td>
+                <td >Сардор Милано </td>
+                <td>4:49</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Dimash</td>
+                <td >Give me your love </td>
+                <td>4:28</td>
+              </tr>
+            </tbody>
+          </table>
+      <!-- /card -->
+
+</body>
+</html>
